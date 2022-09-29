@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - setuptools <60
 
 about:
   home: https://github.com/osyris-project/osyris
