@@ -1,5 +1,5 @@
 {% set name = "osyris" %}
-{% set version = "2.10.0" %}
+{% set version = "2.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/osyris-{{ version }}.tar.gz
-  sha256: 530f67646a151542c3312b3445898fdf5e1fd3e5cbb4abc7f2aad702e024636e
+  sha256: 161069da16139df7fd16e2ab918eaa4c699c7c5a83e9e094fbd2a7acc308edef
 
 build:
   noarch: python
