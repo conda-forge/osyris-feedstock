@@ -1,11 +1,11 @@
-About osyris
-============
+About osyris-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/osyris-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/osyris-project/osyris
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/osyris-feedstock/blob/main/LICENSE.txt)
 
 Summary: A package to visualize AMR data from the RAMSES code
 
