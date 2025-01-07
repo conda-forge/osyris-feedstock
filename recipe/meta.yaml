@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/osyris-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/osyris-{{ version }}.tar.gz
   sha256: d61353f29f18ceaf14775de74b2477a7b03387c0e55409ad9dab207148d3497a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - matplotlib-base
     - numba
     - numpy
@@ -33,6 +33,7 @@ test:
   requires:
     - pip
     - setuptools <60
+    - python {{ python_min }}
 
 about:
   home: https://github.com/osyris-project/osyris
